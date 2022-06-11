@@ -17,7 +17,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="300px"
-        android:background="#4f9d00"
+        android:background="#448700"
         android:orientation="vertical">
 
         <TextView
@@ -46,7 +46,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="250px"
+        android:layout_height="450px"
         android:orientation="vertical"
         android:background="#222222">
 
@@ -58,28 +58,46 @@
             android:textSize="50px"
             android:fontFamily="@font/font_r"
             android:textColor="@color/white"
-            android:text="질문List">
+            android:text="답변">
         </TextView>
 
         <LinearLayout
             android:background="@drawable/border2"
             android:layout_width="1400px"
-            android:layout_height="wrap_content"
+            android:layout_height="200px"
             android:layout_gravity="center"
             android:paddingLeft="20px"
             android:layout_marginTop="20px"
             android:layout_marginBottom="20px">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="30px"
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
                 android:textSize="40px"
                 android:textAlignment="gravity"
                 android:fontFamily="@font/font_r"
-                android:textColor="#e6e6e6"
-                android:text="답변 추가...">
-            </TextView>
+                android:textColorHint="@color/white"
+                android:inputType="none"
+                android:hint="답변 추가...">
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:layout_marginLeft="20px"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:background="@drawable/border3"
+                android:text="등록하기">
+            </Button>
 
         </LinearLayout>
 
@@ -88,8 +106,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="472dp"
-        android:layout_marginTop="40px"
+        android:layout_height="410dp"
+        android:layout_marginTop="120px"
         android:layout_marginLeft="20px"
         android:orientation="vertical">
 

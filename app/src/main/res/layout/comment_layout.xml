@@ -47,7 +47,7 @@
                     android:layout_margin="10dp"
                     android:fontFamily="@font/font_l"
                     android:text="타임마커"
-                    android:textColor="#00cbd9" />
+                    android:textColor="#6dd900" />
 
                 <!-- '타임마커' : id값:videoTime -->
 
