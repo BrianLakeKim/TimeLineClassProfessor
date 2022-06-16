@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_lecture_list"
+        android:enabled="true"
+        android:icon="@drawable/listiconblack"
+        android:title="강의리스트"/>
+    <item
+        android:id="@+id/item_time_list"
+        android:enabled="true"
+        android:icon="@drawable/videoiconblack"
+        android:title="타임마커리스트"/>
+
+</menu>

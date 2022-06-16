@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,6 +9,7 @@
     android:background="#272727 ">
 
     <LinearLayout
+        android:id="@+id/linear1"
         android:layout_width="match_parent"
         android:layout_height="300px"
         android:orientation="vertical"
@@ -36,256 +37,23 @@
 
     </LinearLayout>
 
-    <ScrollView
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_weight="6">
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#fff"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_navigation"/>
 
-        <!-- 스크롤 뷰 적용 -->
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="5dp"
-                app:cardUseCompatPadding="true">
-
-                <!-- 카드뷰 시작 -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <!-- L1 -->
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <!-- L1-1 -->
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/black"
-                            android:fontFamily="@font/font_eb"
-                            android:text="1-1장 안드로이드 스튜디오 소개"
-                            android:layout_margin="10dp"/>
-
-
-                        <ImageView
-                            android:layout_marginTop="10dp"
-                            android:layout_marginLeft="550px"
-                            android:layout_width="60px"
-                            android:layout_height="60px"
-                            android:layout_marginBottom="10dp"
-                            android:background="@drawable/playbtn"
-                            android:backgroundTint="@color/black">
-                        </ImageView>
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/darkgreen"
-                        android:fontFamily="@font/font_l"
-                        android:text="김동현(Master)"
-                        android:layout_margin="10dp"/>
-
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-            <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 첫번째 카드뷰 끝 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="5dp"
-                app:cardUseCompatPadding="true">
-
-                <!-- 카드뷰 시작 -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <!-- L2 -->
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <!-- L2-1 -->
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/black"
-                            android:fontFamily="@font/font_eb"
-                            android:text="1-2장 안드로이드 스튜디오 기능"
-                            android:layout_margin="10dp"/>
-
-
-                        <ImageView
-                            android:layout_marginTop="10dp"
-                            android:layout_marginLeft="550px"
-                            android:layout_width="60px"
-                            android:layout_height="60px"
-                            android:layout_marginBottom="10dp"
-                            android:background="@drawable/playbtn"
-                            android:backgroundTint="@color/black">
-                        </ImageView>
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/darkgreen"
-                        android:fontFamily="@font/font_l"
-                        android:text="김동현(Master)"
-                        android:layout_margin="10dp"/>
-
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-            <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 두번째 카드뷰 끝 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="5dp"
-                app:cardUseCompatPadding="true">
-
-                <!-- 카드뷰 시작 -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <!-- L3 -->
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <!-- L3-1 -->
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/black"
-                            android:fontFamily="@font/font_eb"
-                            android:text="2-1장 클래스의 상속 "
-                            android:layout_margin="10dp"/>
-
-
-                        <ImageView
-                            android:layout_marginTop="10dp"
-                            android:layout_marginLeft="775px"
-                            android:layout_width="60px"
-                            android:layout_height="60px"
-                            android:layout_marginBottom="10dp"
-                            android:background="@drawable/playbtn"
-                            android:backgroundTint="@color/black">
-                        </ImageView>
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/darkgreen"
-                        android:fontFamily="@font/font_l"
-                        android:text="김동현(Master)"
-                        android:layout_margin="10dp"/>
-
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-            <!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 세번째 카드뷰 끝 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
-
-
-
-        </LinearLayout>
-
-    </ScrollView>
-
-    <LinearLayout
+    <FrameLayout
+        android:id="@+id/main_frame"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center">
-
-        <ImageView
-            android:layout_width="100px"
-            android:layout_height="100px"
-            android:backgroundTint="#90FFFFFF"
-            android:background="@drawable/listloading">
-        </ImageView>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginTop="1000px"
-        android:layout_width="match_parent"
-        android:layout_height="250px"
-        android:background="@color/white"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:padding="10px">
-
-        <ImageView
-            android:layout_width="150px"
-            android:layout_height="150px"
-            android:layout_marginRight="250px"
-            android:background="@drawable/listiconblack">
-        </ImageView>
-
-        <ImageView
-            android:layout_width="150px"
-            android:layout_height="150px"
-            android:layout_marginLeft="150px"
-            android:background="@drawable/videoicon">
-        </ImageView>
-
-        </LinearLayout>
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/linear1"
+        android:layout_above="@+id/bottomNav"/>
 
 
-    </LinearLayout>
-
-
-
-</LinearLayout>
+</RelativeLayout>
